@@ -1,6 +1,9 @@
 import config from "./app/config";
 import app from "./app";
 import mongoose from "mongoose";
+const bodyParser = require("body-parser");
+
+app.use(bodyParser.json());
 
 async function main() {
   try {
